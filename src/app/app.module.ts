@@ -13,6 +13,8 @@ import {AboutComponent} from "./about/about.component";
 import {MatTabsModule} from "@angular/material/tabs";
 import { CoursesCardListComponent } from './courses-card-list/courses-card-list.component';
 import {MatCardModule} from '@angular/material/card';
+import { TableComponent } from './table/table.component';
+import {MatTableModule} from '@angular/material/table';
 
 // @ts-ignore
 @NgModule({
@@ -21,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent,
     TopMenuComponent,
     AboutComponent,
-    CoursesCardListComponent
+    CoursesCardListComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import {MatCardModule} from '@angular/material/card';
     MatMenuModule,
     BrowserModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
 
   ],
   providers: [],
