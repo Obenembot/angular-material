@@ -10,13 +10,18 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatMenuModule} from "@angular/material/menu";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AboutComponent} from "./about/about.component";
+import {MatTabsModule} from "@angular/material/tabs";
+import { CoursesCardListComponent } from './courses-card-list/courses-card-list.component';
+import {MatCardModule} from '@angular/material/card';
 
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TopMenuComponent,
-    AboutComponent
+    AboutComponent,
+    CoursesCardListComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +31,8 @@ import {AboutComponent} from "./about/about.component";
     MatIconModule,
     MatMenuModule,
     BrowserModule,
+    MatTabsModule,
+    MatCardModule
 
   ],
   providers: [],
