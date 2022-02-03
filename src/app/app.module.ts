@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,13 @@ import { CoursesCardListComponent } from './courses-card-list/courses-card-list.
 import {MatCardModule} from '@angular/material/card';
 import { TableComponent } from './table/table.component';
 import {MatTableModule} from '@angular/material/table';
+import { TablePaginationComponent } from './table-pagination/table-pagination.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { TablePaginationFilterComponent } from './table-pagination-filter/table-pagination-filter.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSortModule} from '@angular/material/sort';
+
 
 // @ts-ignore
 @NgModule({
@@ -24,7 +31,9 @@ import {MatTableModule} from '@angular/material/table';
     TopMenuComponent,
     AboutComponent,
     CoursesCardListComponent,
-    TableComponent
+    TableComponent,
+    TablePaginationComponent,
+    TablePaginationFilterComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +46,13 @@ import {MatTableModule} from '@angular/material/table';
     MatTabsModule,
     MatCardModule,
     MatTableModule,
-
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSortModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
