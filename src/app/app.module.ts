@@ -21,6 +21,14 @@ import { TablePaginationFilterComponent } from './table-pagination-filter/table-
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSortModule} from '@angular/material/sort';
+import { SelectComponent } from './select/select.component';
+import {MatSelectModule} from '@angular/material/select';
+import {ReactiveFormsModule} from "@angular/forms";
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { TabsComponent } from './tabs/tabs.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { SnackBarComponent } from './snack-bar/snack-bar.component';
 
 
 // @ts-ignore
@@ -33,7 +41,11 @@ import {MatSortModule} from '@angular/material/sort';
     CoursesCardListComponent,
     TableComponent,
     TablePaginationComponent,
-    TablePaginationFilterComponent
+    TablePaginationFilterComponent,
+    SelectComponent,
+    ProgressBarComponent,
+    TabsComponent,
+    SnackBarComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +61,12 @@ import {MatSortModule} from '@angular/material/sort';
     MatPaginatorModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSortModule
+    MatSortModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    MatProgressBarModule,
+    MatSnackBarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
